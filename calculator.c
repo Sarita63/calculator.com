@@ -4,7 +4,7 @@ int main()
 {
 
 
-int num1,num2,res,rep,rar;
+int num1,num2,res,rep,rar,ras;
 printf("enter two numbers");
 scanf("%d %d",&num1, &num2);
 res=add(num1,num2);
@@ -13,6 +13,8 @@ rep=sub(num1,num2);
 printf("subtract value is %d %d: %d ",rep);
 rar=mul(num1,num2);
 printf("subtract value is %d %d: %d ",rar);
+ras=div(num1,num2);
+printf("div value is %d %d: %d ",ras);
 
 return 0;
 
@@ -34,4 +36,10 @@ int mul(int num1,int num2)
     int muls;
     muls=num1*num2;
 return(muls);
+}
+int div(int num1,int num2)
+{
+    int divs;
+    divs=num1/num2;
+return(divs);
 }
